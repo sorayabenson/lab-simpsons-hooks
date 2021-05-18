@@ -13,8 +13,8 @@ const SimpsonsQuote = () => {
 
     return (
         <main>
-            <Button onClick={handleClick}/>
             <Quote {...quote}/>
+            <Button onClick={handleClick}/>
         </main>
     )
 }
