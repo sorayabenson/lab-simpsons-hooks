@@ -2,12 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './quote.css';
 
-const Quote = () => (
-    <h2>hell</h2>
+const Quote = ({ image, character, quote }) => (
+    <figure aria-label='simpsons quote'>
+        <img src={image} alt={character}/>
+        <p>{quote}</p>
+    </figure>
 )
 
 Quote.propTypes = {
-
+    image: PropTypes.string,
+    character: PropTypes.string,
+    quote: PropTypes.string,
 }
 
 export default Quote;
